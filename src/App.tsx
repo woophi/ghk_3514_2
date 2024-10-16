@@ -89,25 +89,25 @@ const whatElses = [
     title: 'Маржильное кредитование',
     subtitle: 'Доступный лимит средств от брокера для торговли',
     link: 'https://alfa.me/AI_test_list',
-    analytics: 'Margin_credit_3514_click',
+    analytics: 'Margin_credit_3514_click_var2',
   },
   {
     title: 'Тарифы',
     subtitle: 'Сделки РЕПО и СВОП',
     link: null,
-    analytics: 'Tarifs_3514_click',
+    analytics: 'Tarifs_3514_click_var2',
   },
   {
     title: 'Требуемое обеспечение',
     subtitle: 'Необходимый обеспечение для марджинальных сделок',
     link: 'https://alfabank.ru/make-money/investments/help/trebuemoe-obespechenie/',
-    analytics: 'Required_security_3514_click',
+    analytics: 'Required_security_3514_click_var2',
   },
   {
     title: 'Безопасно ли это?',
     subtitle: 'Как безопасно торговать на средства брокера',
     link: 'https://alfabank.ru/make-money/investments/learn/t/kak-snizit-riski-na-fondovom-rinke/',
-    analytics: 'Safety_3514_click',
+    analytics: 'Safety_3514_click_var2',
   },
 ];
 
@@ -203,7 +203,7 @@ export const App = () => {
                   className={appSt.slide}
                   key={slide.link}
                   onClick={() => {
-                    window.gtag('event', `Lesson_${index + 1}_3514_click`);
+                    window.gtag('event', `Lesson_${index + 1}_3514_click_var2`);
                     window.location.replace(slide.link);
                   }}
                 >
@@ -223,7 +223,7 @@ export const App = () => {
               block
               view="primary"
               onClick={() => {
-                window.gtag('event', 'Test_3514_click');
+                window.gtag('event', 'Test_3514_click_var2');
                 window.location.replace('https://lk.alfadirect.ru/testing/list?mt=mt&sign=sign');
               }}
             >
@@ -235,7 +235,7 @@ export const App = () => {
         <div
           className={appSt.boxRow}
           onClick={() => {
-            window.gtag('event', 'Articles_3514_click');
+            window.gtag('event', 'Articles_3514_click_var2');
             setOpenBs(true);
           }}
         >
@@ -249,7 +249,7 @@ export const App = () => {
           <div
             className={appSt.boxRow}
             onClick={() => {
-              window.gtag('event', 'What_else_3514_click');
+              window.gtag('event', 'What_else_3514_click_var2');
               setExpanded(!expanded);
             }}
           >
@@ -298,7 +298,7 @@ export const App = () => {
           Популярные активы с плечом
         </Typography.TitleResponsive>
 
-        <div className={appSt.bottomRow} onClick={() => window.gtag('event', 'MTS_Bank_3514_click')}>
+        <div className={appSt.bottomRow} onClick={() => window.gtag('event', 'MTS_Bank_3514_click_var2')}>
           <img src={mtsBank} width={48} height={48} />
           <div>
             <Typography.Text tag="p" defaultMargins={false} view="primary-medium">
@@ -309,7 +309,7 @@ export const App = () => {
             </Typography.Text>
           </div>
         </div>
-        <div className={appSt.bottomRow} onClick={() => window.gtag('event', 'MTS_3514_click')}>
+        <div className={appSt.bottomRow} onClick={() => window.gtag('event', 'MTS_3514_click_var2')}>
           <img src={mts} width={48} height={48} />
           <div>
             <Typography.Text tag="p" defaultMargins={false} view="primary-medium">
@@ -320,7 +320,7 @@ export const App = () => {
             </Typography.Text>
           </div>
         </div>
-        <div className={appSt.bottomRow} onClick={() => window.gtag('event', 'SBER_3514_click')}>
+        <div className={appSt.bottomRow} onClick={() => window.gtag('event', 'SBER_3514_click_var2')}>
           <img src={sber} width={48} height={48} />
           <div>
             <Typography.Text tag="p" defaultMargins={false} view="primary-medium">
@@ -341,7 +341,7 @@ export const App = () => {
           block
           view="primary"
           href="https://alfa.me/AI_test_list"
-          onClick={() => window.gtag('event', 'Terminal_3514_click')}
+          onClick={() => window.gtag('event', 'Terminal_3514_click_var2')}
         >
           Перейти в терминал
         </ButtonMobile>
@@ -368,7 +368,7 @@ export const App = () => {
               key={article.link}
               className={appSt.articleRow}
               onClick={() => {
-                window.gtag('event', `Arcticles_${index + 1}_3514_click`);
+                window.gtag('event', `Arcticles_${index + 1}_3514_click_var2`);
                 window.location.replace(article.link);
               }}
             >
@@ -432,7 +432,7 @@ export const App = () => {
           <div
             className={appSt.slideRow}
             onClick={() => {
-              window.gtag('event', 'Repo_3514_click');
+              window.gtag('event', 'Repo_3514_click_var2');
               setExpanded2(!expanded2);
             }}
           >
@@ -450,7 +450,7 @@ export const App = () => {
           <div
             className={appSt.slideRow}
             onClick={() => {
-              window.gtag('event', 'Swap_3514_click');
+              window.gtag('event', 'Swap_3514_click_var2');
               setExpanded3(!expanded3);
             }}
           >
